@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Crowdaround Demo</title>
+    <style>
+        html {
+            background: url('concrete2.jpg');
+        }
+        html, body {
+            margin  : 0;
+            padding : 0;
+        }
+        #main  {
+            width  : 400px;
+            height : 400px;
+            margin : 100px auto;
+        }
+        .thing {
+            float      : left;
+            width      : 50px;
+            height     : 50px;
+            margin     : 15px;
+            background : #ffd;
+            box-shadow : 0px 0px 2px #ffd, 7px 7px 20px rgba(0,0,50,0.5);
+        }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="main">
+        <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div>
+        <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div>
+        <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div>
+        <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div>
+        <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div> <div class="thing"></div>
+    </div>
+
+    <script src="lib/jquery.js"></script>
+    <script src="crowdaround.min.js"></script>
+    <script>
+        $(function () {
+            $('.thing').crowdAround({
+                distance : 150,
+                strength : 75
+            });
+        });
+    </script>
+
+  </body>
+</html>
