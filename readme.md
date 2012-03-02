@@ -43,7 +43,7 @@ Enables touch event listeners. Switch off if you don't need them with `false`
 
 #### android (false)
 
-Effect can be sloow on Android devices in browser version ~2.2-2.3, particularly if there are images 
+Effect can be slow on Android devices in browser version ~2.2-2.3, particularly if there are images 
 in the grid. For this readon Android devices are excluded by default. Set this to `true` to explicitly
 allow it.
 
