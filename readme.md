@@ -1,9 +1,9 @@
 CrowdAround
 ===========
 
-Nifty mouseover effect for grid-arranged lists of things. Makes all the ladies crowd
-around thier man like Flava Flav. In this analogy, the ladies are dom elements, and
-Flava Flav is your mouse cursor.
+Nifty magnetic mouseover effect for grid-arranged lists of things.
+
+Demo available: http://lakmeer.github.com/jquery-crowdaround
 
 Uses CSS transforms to increase performance and maintain page flow. Supports touch events.
 Degrades back to static layout gracefully.
@@ -15,17 +15,12 @@ Degrades back to static layout gracefully.
 * Browser support for css transform:translate.
 
 
-### Includes:
-
-* A demo
-* Automatic build script used to compile the coffee.
-
-
-
 Usage
 -----
 
-$(yourCollection).crowdAround(options);
+- Include crowdaround.min.
+
+- `$(yourCollection).crowdAround(options);`
 
 
 ### Options
@@ -48,7 +43,8 @@ Enables touch event listeners. Switch off if you don't need them with `false`
 
 #### android (false)
 
-Effect is really slow on Android devices in browser version ~2.2-2.3, so is disabled by default.
-Set this to `true` to explicitly allow it.
+Effect can be sloow on Android devices in browser version ~2.2-2.3, particularly if there are images 
+in the grid. For this readon Android devices are excluded by default. Set this to `true` to explicitly
+allow it.
 
 
