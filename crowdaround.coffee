@@ -133,7 +133,7 @@ $.fn.crowdAround = (options) ->
 
     # Because we're going to be preventDefault'ing the touch event, the user can't scroll
     # when crowding is happening. To combat this, scope the event capture to the collection's
-    # parent container, so scrolling is still possible when the event beings outside it. Make
+    # parent container, so scrolling is still possible when the event begins outside it. Make
     # sure the parent container is clearfix'd or has height. If you don't care about touch,
     # set { touch : false } in the config.
 
