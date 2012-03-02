@@ -18,7 +18,7 @@ Degrades back to static layout gracefully.
 Usage
 -----
 
-- Include crowdaround.min.
+- Include crowdaround.min.js
 
 - `$(yourCollection).crowdAround(options);`
 
